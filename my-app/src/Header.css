@@ -1,0 +1,27 @@
+.Navigation_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navigation_bar img {
+  height: 150px;
+  width: auto;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.Navigation_bar ul {
+  align-items: center;
+  padding-right: 16rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 30px;
+  color: #58d68d;
+}
+
+.Navigation_bar a {
+  text-decoration: none;
+  color: #58d68d;
+  font-family: "Playwrite DK Uloopet";
+}

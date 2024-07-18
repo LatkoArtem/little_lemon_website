@@ -1,0 +1,72 @@
+.Footer {
+  background-color: gray;
+}
+
+.FooterMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.FooterMain img {
+  height: 150px;
+  width: auto;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.FooterMain ul {
+  align-items: center;
+  padding-right: 10rem;
+  list-style: none;
+  display: block;
+}
+
+.Sociallinks h3 {
+  padding-left: 20px;
+}
+
+.Sociallinks ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.Sociallinks a {
+  display: block;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.Docnav a {
+  display: block;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.Docnav a:hover {
+  color: white;
+}
+
+.Contact h3 {
+  padding-left: 80px;
+}
+
+.Contact ul {
+  align-items: center;
+  list-style: none;
+  display: block;
+  gap: 1rem;
+}
+
+.Sociallinks a:hover {
+  color: white;
+}
+
+.Copyright {
+  text-align: center;
+  padding-bottom: 1rem;
+}
