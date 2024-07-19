@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LittleLemonFooter from "../src/images/LittleLemonFooter.png";
 import "./Header.css";
 
@@ -8,25 +9,22 @@ const Header = () => {
       <img src={LittleLemonFooter} alt="littleLemonLogo" />
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <Link to="/menu">Menu</Link>
         </li>
         <li>
-          <a href="/menu">Menu</a>
+          <Link to="/reservation">Reservation</Link>
         </li>
         <li>
-          <a href="/reservation">Reservation</a>
+          <Link to="/order">Order online</Link>
         </li>
         <li>
-          <a href="/order">Order online</a>
-        </li>
-        <li>
-          <a href="/login">Log in</a>
+          <Link to="/login">Log in</Link>
         </li>
       </ul>
     </nav>

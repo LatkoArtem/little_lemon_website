@@ -1,0 +1,46 @@
+.DescriptionHome {
+  display: flex;
+  padding-left: 10rem;
+  background-color: #277145;
+  color: white;
+}
+
+.DescriptionHome h1 {
+  color: #eeee37;
+  padding-top: 3rem;
+}
+
+.DescriptionHome p {
+  margin-bottom: 0px;
+  padding-bottom: 2rem;
+}
+
+.DescriptionText {
+  width: 40%;
+}
+
+.ReserveButton {
+  display: flex;
+  padding: 60px;
+}
+
+.ButtonOption {
+  padding: 20px 50px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #eeee37;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  box-shadow: 0px 5px 6px;
+}
+
+.RestaurantPhoto {
+  width: 500px;
+  height: auto;
+  padding: 50px;
+  padding-left: 90px;
+}

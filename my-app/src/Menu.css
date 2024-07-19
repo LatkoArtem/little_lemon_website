@@ -1,0 +1,31 @@
+.OurMenu {
+  padding: 20px;
+  background-color: azure;
+  text-align: center;
+}
+
+.OurMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.OurMenu li {
+  width: 26%;
+  padding: 0;
+  margin: 25px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.MenuCard img {
+  border-radius: 20px;
+}
+
+.MenuCard {
+  background-color: lightgray;
+}

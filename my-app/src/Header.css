@@ -12,11 +12,11 @@
 
 .Navigation_bar ul {
   align-items: center;
-  padding-right: 16rem;
+  padding-right: 19rem;
   list-style: none;
   display: flex;
   gap: 2rem;
-  font-size: 30px;
+  font-size: 33px;
   color: #58d68d;
 }
 
