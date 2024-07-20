@@ -8,11 +8,19 @@
 .DescriptionHome h1 {
   color: #eeee37;
   padding-top: 3rem;
+  font-family: "Bungee";
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+.DescriptionHome h2 {
+  font-family: "Playwrite DK Uloopet";
 }
 
 .DescriptionHome p {
   margin-bottom: 0px;
   padding-bottom: 2rem;
+  font-family: "Playwrite DK Uloopet";
 }
 
 .DescriptionText {
@@ -36,6 +44,11 @@
   font-size: 20px;
   letter-spacing: 1.5px;
   box-shadow: 0px 5px 6px;
+  font-family: "Bungee";
+}
+
+.ButtonOption:hover {
+  color: rgb(41, 207, 199);
 }
 
 .RestaurantPhoto {
@@ -43,4 +56,13 @@
   height: auto;
   padding: 50px;
   padding-left: 90px;
+}
+
+.DishesFromChef h1 {
+  font-family: "Rubik Mono One";
+  text-align: center;
+  background-color: azure;
+  margin: 0;
+  padding: 40px;
+  padding-top: 75px;
 }

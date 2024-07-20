@@ -1,0 +1,59 @@
+.AboutPage {
+  padding: 20px;
+  background-color: azure;
+}
+
+.AboutUsText h1 {
+  color: rgb(50, 101, 102);
+  font-family: "Rubik Mono One";
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.SectionAbout {
+  display: block;
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 25px;
+  background-color: #277145;
+  margin-bottom: 20px;
+  border: 3px solid rgb(11, 11, 11);
+  position: relative;
+}
+
+.DescriptionSectionAbout {
+  display: flex;
+}
+
+.AllAboutPhotos {
+  height: 170px;
+  width: auto;
+  margin: 20px;
+  border: 2.3px solid white;
+  border-radius: 20px;
+}
+
+.SectionAbout h2 {
+  font-size: 32px;
+  font-family: "Playwrite DK Uloopet";
+  font-weight: 1000;
+  color: #eeee37;
+}
+
+.SectionAbout p {
+  font-size: 24px;
+  font-family: "Playwrite DK Uloopet";
+  color: white;
+}
+
+.SectionAbout .Bookmark {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  width: 150px;
+  height: 150px;
+  background: url("C:\Users\Latko Artem\OneDrive\Desktop\Розробка сайту\Little Lemon website\my-app\public\images\Bookmark.png")
+    no-repeat center center;
+  background-size: contain;
+}

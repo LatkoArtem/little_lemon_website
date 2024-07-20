@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Menu.css";
 
 const menuItems = [
@@ -9,7 +9,7 @@ const menuItems = [
     description: "Grilled bread topped with fresh tomatoes, garlic, and basil.",
     type: "Appetizer",
     price: "$5.00",
-    fromChef: true,
+    fromChef: false,
   },
   {
     name: "Stuffed Mushrooms",
@@ -17,7 +17,7 @@ const menuItems = [
     description: "Mushrooms stuffed with cheese and herbs.",
     type: "Appetizer",
     price: "$6.00",
-    fromChef: false,
+    fromChef: true,
   },
   {
     name: "Garlic Bread",
@@ -43,7 +43,7 @@ const menuItems = [
     description: "Crisp romaine lettuce with Caesar dressing and croutons.",
     type: "Salad",
     price: "$7.00",
-    fromChef: true,
+    fromChef: false,
   },
   {
     name: "Greek Salad",
@@ -59,7 +59,7 @@ const menuItems = [
     description: "Tomatoes, mozzarella, and basil with balsamic glaze.",
     type: "Salad",
     price: "$7.50",
-    fromChef: false,
+    fromChef: true,
   },
   {
     name: "Garden Salad",
@@ -77,7 +77,7 @@ const menuItems = [
     description: "Rich and creamy chocolate cake with a dark chocolate glaze.",
     type: "Dessert",
     price: "$5.00",
-    fromChef: true,
+    fromChef: false,
   },
   {
     name: "Cheesecake",
@@ -85,7 +85,7 @@ const menuItems = [
     description: "Classic cheesecake with a graham cracker crust and strawberry topping.",
     type: "Dessert",
     price: "$6.00",
-    fromChef: false,
+    fromChef: true,
   },
   {
     name: "Tiramisu",
@@ -135,7 +135,7 @@ const menuItems = [
     description: "A selection of red or white wine.",
     type: "Drink",
     price: "$6.00",
-    fromChef: true,
+    fromChef: false,
   },
 
   // Головні страви
@@ -161,7 +161,7 @@ const menuItems = [
     description: "Grilled chicken breast served with fettuccine Alfredo.",
     type: "Main course",
     price: "$14.00",
-    fromChef: false,
+    fromChef: true,
   },
   {
     name: "Vegetable Stir-fry",
@@ -174,23 +174,66 @@ const menuItems = [
 ];
 
 const Menu = () => {
+  const [filteredItems, setFilteredItems] = useState(menuItems);
+
+  const handleFilter = (type) => {
+    if (type === "All") {
+      setFilteredItems(menuItems);
+    } else {
+      setFilteredItems(menuItems.filter((item) => item.type === type));
+    }
+  };
+
   return (
-    <div className="OurMenu">
-      <h1>Our Menu</h1>
-      <ul>
-        {menuItems.map((item, index) => (
-          <li key={index} className="MenuCard">
-            <img src={item.photo} alt={item.name} style={{ width: "100%", height: "auto" }} />
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>Type: {item.type}</p>
-            <p>Price: {item.price}</p>
-            <p>From Chef: {item.fromChef ? "Yes" : "No"}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <main>
+      <div className="OurMenu">
+        <h1 className="MenuWord">Our Menu</h1>
+        <div className="ButtonsToFilterMenu">
+          <button type="button" className="ButtonToFilterMenu" onClick={() => handleFilter("All")}>
+            All
+          </button>
+          <button type="button" className="ButtonToFilterMenu" onClick={() => handleFilter("Drink")}>
+            Drinks
+          </button>
+          <button type="button" className="ButtonToFilterMenu" onClick={() => handleFilter("Main course")}>
+            Main courses
+          </button>
+          <button type="button" className="ButtonToFilterMenu" onClick={() => handleFilter("Dessert")}>
+            Desserts
+          </button>
+          <button type="button" className="ButtonToFilterMenu" onClick={() => handleFilter("Salad")}>
+            Salads
+          </button>
+          <button type="button" className="ButtonToFilterMenu" onClick={() => handleFilter("Appetizer")}>
+            Appetizers
+          </button>
+        </div>
+        <ul>
+          {filteredItems.map((item, index) => (
+            <li key={index} className="MenuCard">
+              {item.fromChef && <div className="icon" />}
+              <img src={item.photo} alt={item.name} style={{ width: "100%", height: "auto" }} />
+              <div className="DescriptionCard">
+                <h3 className="NameOfCard">{item.name}</h3>
+                <p className="CompositionOfCard">
+                  <strong>{item.description}</strong>
+                </p>
+                <p className="PriceOfCard">
+                  <strong>Price: {item.price}</strong>
+                </p>
+              </div>
+              <div className="AddToOrderButtonDiv">
+                <button type="button" className="AddToOrderButton">
+                  Add to Order
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </main>
   );
 };
 
 export default Menu;
+export { menuItems };
