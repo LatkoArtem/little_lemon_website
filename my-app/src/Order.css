@@ -77,7 +77,7 @@
 }
 
 .ButtonMenu {
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 .RemoveButton {
@@ -117,8 +117,8 @@
 
 .MinusButton,
 .PlusButton {
-  background-color: #f0f0f0; /* Змініть це значення на потрібний вам колір */
-  border: 1px solid #ccc; /* Змініть це значення на потрібний вам колір */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
   padding: 5px 10px;
   font-size: 1.2rem;
   cursor: pointer;
@@ -127,5 +127,42 @@
 
 .MinusButton:hover,
 .PlusButton:hover {
-  background-color: #e0e0e0; /* Змініть це значення на потрібний вам колір */
+  background-color: #e0e0e0;
+}
+
+.CheckoutButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 18px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  font-family: "Bungee";
+  margin-top: 40px;
+}
+
+.CheckoutButton:hover {
+  background-color: #1f5422;
+}
+
+.TotalPrice {
+  font-family: "Amatic SC";
+  font-size: 46px;
+  color: black;
+  border-top: 2px solid #dddadd;
+  border-bottom: 2px solid #dddadd;
+  text-align: end;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.OrderListEmptyTitle {
+  border-top: 2px solid gray;
+  padding-top: 60px;
+  font-size: 46px;
+  text-shadow: -2px -2px #287e4c, 2px -2px #287e4c, -2px 2px #287e4c, 2px 2px #287e4c;
+  color: rgb(205, 205, 205);
 }

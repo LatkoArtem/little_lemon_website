@@ -66,6 +66,7 @@ function Reservation() {
     setGuests("");
     setDate("");
     setTime("");
+    alert("TABLE IS BOOKED!");
   };
 
   return (
