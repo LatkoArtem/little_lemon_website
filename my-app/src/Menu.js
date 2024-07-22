@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useOrder } from "./OrderContext";
 import "./Menu.css";
 
 const menuItems = [
@@ -175,6 +176,7 @@ const menuItems = [
 
 const Menu = () => {
   const [filteredItems, setFilteredItems] = useState(menuItems);
+  const { addToOrder } = useOrder();
 
   const handleFilter = (type) => {
     if (type === "All") {
@@ -223,7 +225,7 @@ const Menu = () => {
                 </p>
               </div>
               <div className="AddToOrderButtonDiv">
-                <button type="button" className="AddToOrderButton">
+                <button type="button" className="AddToOrderButton" onClick={() => addToOrder(item)}>
                   Add to Order
                 </button>
               </div>

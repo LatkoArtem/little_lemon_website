@@ -66,3 +66,33 @@
   padding: 40px;
   padding-top: 75px;
 }
+
+.DishesFromChefTitle {
+  display: flex;
+  justify-content: end;
+  background-color: azure;
+}
+
+.ButtonGoToMenu {
+  outline: none;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #eeee37;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  box-shadow: 0px 5px 6px;
+  font-family: "Bungee";
+  margin-right: 140px;
+  margin-left: 140px;
+}
+
+.ButtonGoToMenu:hover {
+  color: rgb(41, 207, 199);
+}
+
+.MenuButton {
+  padding-top: 60px;
+}

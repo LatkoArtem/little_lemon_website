@@ -25,3 +25,8 @@
   color: #58d68d;
   font-family: "Playwrite DK Uloopet";
 }
+
+.Navigation_bar a:hover {
+  color: white;
+  text-shadow: -1px -1px 0 #58d68d, 1px -1px 0 #58d68d, -1px 1px 0 #58d68d, 1px 1px 0 #58d68d;
+}

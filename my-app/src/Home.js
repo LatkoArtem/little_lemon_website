@@ -14,6 +14,10 @@ const Home = () => {
     navigate("/reservation");
   };
 
+  const handleMenuClick = () => {
+    navigate("/menu");
+  };
+
   return (
     <div className="HomePage">
       <div className="DescriptionHome">
@@ -35,7 +39,14 @@ const Home = () => {
         </div>
       </div>
       <div className="DishesFromChef">
-        <h1>Dishes from Chef</h1>
+        <div className="DishesFromChefTitle">
+          <h1>Dishes from Chef</h1>
+          <div className="MenuButton">
+            <button type="button" className="ButtonGoToMenu" onClick={handleMenuClick}>
+              Go to the Menu
+            </button>
+          </div>
+        </div>
         <div className="OurMenu">
           <ul>
             {filteredMenuItems.map((item, index) => (
@@ -51,11 +62,7 @@ const Home = () => {
                     <strong>Price: {item.price}</strong>
                   </p>
                 </div>
-                <div className="AddToOrderButtonDiv">
-                  <button type="button" className="AddToOrderButton">
-                    Add to Order
-                  </button>
-                </div>
+                <div className="AddToOrderButtonDiv"></div>
               </li>
             ))}
           </ul>
